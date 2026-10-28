@@ -1,5 +1,7 @@
 # orca-multi
 
+[English](README.en.md) | [中文](README.md)
+
 让 Claude Code（或 Codex）当**调度端**，通过 Orca 把开发任务派给 Codex 等执行 agent：拆任务、写合同、启动、等回报、校验改动范围、跑验收命令、不通过自动打回，最后经人确认再合并。
 
 适用于任何 git 项目。执行 agent 的终端在 Orca 里可见，人可以随时查看或插话。
@@ -8,7 +10,8 @@
 
 ```text
 orca-multi/
-├── README.md                 本说明
+├── README.md                 本说明（中文）
+├── README.en.md              English README
 ├── install.sh                安装到 Claude Code / Codex，本机或远程
 └── skills/orca-multi/        skill 源码（安装时整体复制）
     ├── SKILL.md              给调度端看的工作流程
@@ -138,3 +141,7 @@ reuse: T-...          # 可选：复用前一个任务的工作区和终端
 1. 改 `skills/orca-multi/` 下的源码。
 2. 跑测试：`python3 -m unittest discover -s skills/orca-multi/scripts`
 3. `./install.sh` 装到本机；需要时 `./install.sh --host <主机>` 装到其他机器。
+
+## 许可证
+
+MIT，见 [LICENSE](LICENSE)。
