@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# orca-multi 入口
+exec python3 "$(cd "$(dirname "$0")" && pwd)/orca_multi.py" "$@"
